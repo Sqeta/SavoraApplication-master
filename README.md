@@ -1,10 +1,10 @@
-Overwiew
+##Overwiew
 
 Savora Budget Tracker is a mobile budgeting application developed to help users manage their personal finances in a simple and effective way. The application allows users to create an account, record their expenses, set budgeting goals, and monitor their spending habits through reports and visual graphs.
 
 The main purpose of the application is to encourage responsible spending by giving users a clear overview of where their money is going and how well they are staying within their budget limits. The application stores data separately for each user, ensuring that every user has their own personalized budgeting experience.
 
-Main Features
+##Main Features
 The application includes the following core features:
 
 * User Registration and Login
@@ -21,12 +21,12 @@ Users can create categories such as Food, Transport, Entertainment, Shopping, an
 
 Users are also able to set minimum and maximum budget goals. The application compares spending against these goals and provides feedback on whether the user is staying within their desired budget range.
 
-Graphical Analysis  
+##Graphical Analysis  
 Savora includes a graphing feature that visually displays spending per category. This allows users to quickly identify which categories consume the largest portion of their budget.
 
 The graph also incorporates the user's minimum and maximum budget goals, making it easier to compare actual spending against planned spending targets.
 
-Gamification Features
+##Gamification Features
 To encourage better financial habits, the application includes a badge system that rewards users based on their budgeting performance.
 
 The badges include:
@@ -40,7 +40,7 @@ These rewards provide motivation for users to maintain healthy spending habits.
 The extra features that i added
 In addition to the required features, the following custom features were developed:
 
-Top Spending Category
+##Top Spending Category
 The application automatically identifies and displays the category where the user spends the most money.
 
 Example:
@@ -66,10 +66,10 @@ The Financial Health Score evaluates the user's spending behaviour and provides 
 Personalized Welcome Message
 When users log into the application, they are greeted using their first name. This creates a more personalized user experience and makes the application feel more engaging.
 
-Smart Budget Tips
+##Smart Budget Tips
 The application generates helpful budgeting advice based on the user's spending habits and budget status. These tips assist users in making better financial decisions and encourage responsible spending.
 
-Conclusion
+##Conclusion
 Savora Budget Tracker provides users with an effective way to manage their personal finances through budgeting, expense tracking, reporting, and graphical analysis. The combination of budgeting tools, visual feedback, personalized insights, and gamification features makes the application both practical and engaging. The application encourages users to develop better financial habits while providing them with the tools needed to monitor and improve their spending behaviour.
 
 
