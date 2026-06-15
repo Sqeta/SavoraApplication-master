@@ -1,78 +1,110 @@
-Overview
-Savora is a mobile application developed using Kotlin in Android Studio, created to make it easier for users to interact with and
-manage food-related content. The main idea behind the app is to keep things simple, clean, and easy to use, so that anyone can navigate
-through it without struggling. Instead of overcomplicating things, the app focuses on giving users a smooth experience while still
-including useful features that make it practical for everyday use.
+Overwiew
 
+Savora Budget Tracker is a mobile budgeting application developed to help users manage their personal finances in a simple and effective way. The application allows users to create an account, record their expenses, set budgeting goals, and monitor their spending habits through reports and visual graphs.
 
-Features
-The app includes important features such as user registration and login, which allow users to securely access their accounts.
-Once inside the app, users can add and manage their own content, making it useful for organizing food-related entries. 
-One of the standout features is the ability to upload or attach images, which makes the experience more interactive and visually
-appealing. Overall, the app is designed to be responsive and quick, so users don’t experience delays or frustration while using it.
+The main purpose of the application is to encourage responsible spending by giving users a clear overview of where their money is going and how well they are staying within their budget limits. The application stores data separately for each user, ensuring that every user has their own personalized budgeting experience.
 
+Main Features
+The application includes the following core features:
 
-Technologies Used
-Savora is built using Kotlin, which is a modern programming language that works well with Android development. 
-The layouts and design of the app are created using XML, helping to keep everything structured and visually clear. 
-The entire project is developed in Android Studio, which makes it easier to test, debug, and improve the app. GitHub is used
-to manage the code and keep track of changes during development.
+* User Registration and Login
+* User Session Management
+* Category Management
+* Expense Tracking
+* Budget Goal Management
+* Spending Reports
+* Graphical Spending Analysis
+* Budget Status Monitoring
+* Gamification Badges and Rewards
 
+Users can create categories such as Food, Transport, Entertainment, Shopping, and Utilities, and then assign expenses to these categories. This makes it easier to understand spending patterns and identify areas where spending can be reduced.
 
-Functionality
-The app shows an understanding of basic mobile app development concepts. It handles user input, allows movement between different 
-screens, and manages simple data within the app. Each part of the app has a clear purpose, whether it’s logging in, registering, 
-or adding content. Everything is designed to work together smoothly so that the user doesn’t feel lost or
-confused while using the app.
+Users are also able to set minimum and maximum budget goals. The application compares spending against these goals and provides feedback on whether the user is staying within their desired budget range.
 
+Graphical Analysis  
+Savora includes a graphing feature that visually displays spending per category. This allows users to quickly identify which categories consume the largest portion of their budget.
 
-Future Improvements
-Even though Savora is functional, there are still many ways it can be improved. For example, a real database like Firebase
-could be added to store user data more securely. The design can also be improved to make it more modern and visually appealing. 
-Additional features like search options, notifications, and better organization tools could make the app even more useful and
-enjoyable to use.
+The graph also incorporates the user's minimum and maximum budget goals, making it easier to compare actual spending against planned spending targets.
 
+Gamification Features
+To encourage better financial habits, the application includes a badge system that rewards users based on their budgeting performance.
+
+The badges include:
+
+* Gold Badge - Awarded when spending remains within the budget range.
+* Silver Badge - Awarded when spending is below the budget range.
+* Bronze Badge - Awarded when spending exceeds the budget range.
+
+These rewards provide motivation for users to maintain healthy spending habits.
+
+The extra features that i added
+In addition to the required features, the following custom features were developed:
+
+Top Spending Category
+The application automatically identifies and displays the category where the user spends the most money.
+
+Example:
+
+* Top Category: Food
+
+This feature helps users quickly recognize their biggest spending area and make informed financial decisions.
+
+Financial Health Problems
+A personalized financial dashboard was added to provide users with a quick overview of their financial performance.
+
+The dashboard displays:
+
+* Remaining Balance
+* Total Spending
+* Budget Usage Percentage
+* Expense Count
+* Smart Budget Tips
+* Financial Health Score
+
+The Financial Health Score evaluates the user's spending behaviour and provides an indication of how effectively they are managing their budget.
+
+Personalized Welcome Message
+When users log into the application, they are greeted using their first name. This creates a more personalized user experience and makes the application feel more engaging.
+
+Smart Budget Tips
+The application generates helpful budgeting advice based on the user's spending habits and budget status. These tips assist users in making better financial decisions and encourage responsible spending.
 
 Conclusion
-Savora was developed as part of an academic project and represents a strong starting point in mobile app development.
-It shows the ability to build a working application with real features while keeping the design simple and user-friendly. 
-With more improvements and added features, the app has the potential to grow into something even more advanced and useful.
+Savora Budget Tracker provides users with an effective way to manage their personal finances through budgeting, expense tracking, reporting, and graphical analysis. The combination of budgeting tools, visual feedback, personalized insights, and gamification features makes the application both practical and engaging. The application encourages users to develop better financial habits while providing them with the tools needed to monitor and improve their spending behaviour.
 
 
 
 
-video link: https://youtu.be/KZuEgxQJqrU?si=VELphGqaF6BNQ1EY
+overview:
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/fdfbaa27-ac0c-4f30-ba1f-ad73a07a5268" />
 
-overview :
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/9729c30c-02a1-4e33-b155-abb538324e29" />
+register page:
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/7a142389-6e5a-41bd-a20c-b3dd7cd355c0" />
 
-register:
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/9cdeb716-c159-450f-a9a4-bf165de7d772" />
+login page:
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/35f9b184-acf1-4738-93ff-0211835b2e64" />
 
-login:
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/9e3a42a8-9e25-4afa-9074-eb715d92efc8" />
+home page:
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/323ab785-5808-4551-94c1-ebe4771f5933" />
 
-home:
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/be7c70d9-78ab-4dab-ae13-75f099c01dc9" />
+category page:
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/a24bd6d5-0324-4a63-8e58-6299de13c2e4" />
 
-categories:
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/467a45da-d480-4bd1-86cc-c9c7b4001252" />
+expense page:
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/ff1a17e7-a71d-40fe-9cc8-748d7ab05562" />
 
-expenses:
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/b265af50-9bb0-4cda-96f8-52b9d6747690" />
+view expense page:
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/74723823-33df-4f21-b224-5b6f0c5b37ac" />
 
-expenese report:
-<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/f0314abb-ba53-4e34-b0d3-f2ac2417a55b" />
+budget settings page:
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/07889231-de99-477f-a3cf-8ed59ef44440" />
 
-setting:
-![Uploading image.png…]()
+graph page:
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/3d425d0c-39f3-46ff-89de-8349c36a1749" />
 
-report:
-![Uploading image.png…]()
+budget status page:
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/a5421c3f-ef88-4583-adb1-8d832dc5e45e" />
 
-
-
-
-
-
+reports page:
+<img width="720" height="1600" alt="image" src="https://github.com/user-attachments/assets/6b211c3d-bed4-4091-89da-469e606d4aab" />
 
