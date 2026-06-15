@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#F7F9FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtRegisterTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/txtRegisterSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Join Savora and start managing your money"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- First Name -->
+        <EditText
+            android:id="@+id/etFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="First Name"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:textColor="#000000"/>
+
+        <!-- Last Name -->
+        <EditText
+            android:id="@+id/etLastName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Last Name"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#000000"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Email"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:layout_marginTop="15dp"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"/>
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Password"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:layout_marginTop="15dp"
+            android:inputType="textPassword"
+            android:textColor="#000000"/>
+
+        <!-- Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Register"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="30dp"
+            app:cornerRadius="12dp"
+            android:onClick="register_user"
+            android:backgroundTint="#2E7D32"/>
+
+        <TextView
+            android:id="@+id/txtLoginRedirect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account? Login"
+            android:textColor="#2E7D32"
+            android:textStyle="bold"
+            android:clickable="true"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:onClick="GotoLogin"/>
+
+    </LinearLayout>
+
+</ScrollView>

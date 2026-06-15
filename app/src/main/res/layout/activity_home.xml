@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello, Welcome back"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:layout_marginBottom="6dp" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage your money easily"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2E7D32"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Balance"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+            <EditText
+                android:id="@+id/etTotalAmount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Enter total amount"
+                android:inputType="numberDecimal"
+                android:background="#EEEEEE"
+                android:textColor="#000000"
+                android:textColorHint="#808080"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Save Total Amount"
+                android:onClick="save_balance"
+                android:backgroundTint="#1B5E20"
+                android:textColor="#FFFFFF"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvRemainingBalance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remaining Balance: R0.00"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:id="@+id/tvHealthScore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Financial Health Score: Set budget first"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="17sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tvTopCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Top Category: None"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/tvTotalSpent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Spent: R0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvBudgetUsed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Budget Used: 0%"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvExpenseCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Expenses Logged: 0"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:layout_marginTop="4dp" />
+
+            <TextView
+                android:id="@+id/tvSmartTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💡 Tip: Set your budget to receive smart tips."
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Add Category"
+                android:onClick="add_category"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Add Expense"
+                android:onClick="add_expense"
+                android:backgroundTint="#388E3C"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="View Expenses"
+                android:onClick="view_expenses"
+                android:backgroundTint="#43A047"
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Budget Settings"
+                android:onClick="navigate_settings"
+                android:backgroundTint="#2E7D32"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Transactions"
+                android:onClick="navigate_transactions"
+                android:backgroundTint="#66BB6A"
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="View Graph"
+                android:onClick="view_graph"
+                android:backgroundTint="#4CAF50"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Budget Status"
+            android:onClick="open_budget_status"
+            android:backgroundTint="#FF9800"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="20dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Logout"
+            android:onClick="logout"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D32F2F" />
+
+    </LinearLayout>
+
+</ScrollView>

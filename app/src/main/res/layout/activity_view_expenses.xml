@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F7FA">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Expenses"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etSearchExpense"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Search by category, date, description"
+            android:background="#EEEEEE"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Search"
+                android:onClick="search_expenses"
+                android:backgroundTint="#2E7D32"
+                android:textColor="#FFFFFF" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="Clear"
+                android:onClick="clear_search"
+                android:backgroundTint="#757575"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvExpensesList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No expenses yet..."
+            android:textSize="16sp"
+            android:textColor="#000000" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Back"
+            android:onClick="back_home"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+</ScrollView>

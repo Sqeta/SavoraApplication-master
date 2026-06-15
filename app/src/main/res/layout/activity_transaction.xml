@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reports"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- START DATE -->
+        <EditText
+            android:id="@+id/etStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Start Date (YYYY-MM-DD)"
+            android:background="#EEEEEE"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- END DATE -->
+        <EditText
+            android:id="@+id/etEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="End Date (YYYY-MM-DD)"
+            android:background="#EEEEEE"
+            android:textColor="#000000"
+            android:textColorHint="#808080"
+            android:padding="12dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- BUTTON -->
+        <Button
+            android:id="@+id/btnGenerateReport"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Generate Report"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- OUTPUT -->
+        <TextView
+            android:id="@+id/tvReportResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Results will appear here"
+            android:textColor="#000000"/>
+
+
+
+        <Button
+
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="150dp"
+            android:text="Back"
+            android:onClick="back_home"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D32F2F"/>
+
+    </LinearLayout>
+</ScrollView>

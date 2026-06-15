@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#F7F9FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/txtLoginTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="#1B5E20"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:id="@+id/txtLoginSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login to continue managing your budget"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="30dp"/>
+
+        <!-- Email -->
+        <EditText
+            android:id="@+id/etLoginEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Email"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:inputType="textEmailAddress"
+            android:textColor="#000000"/>
+
+        <!-- Password -->
+        <EditText
+            android:id="@+id/etLoginPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Password"
+            android:background="@drawable/input_field_bg"
+            android:padding="12dp"
+            android:layout_marginTop="15dp"
+            android:inputType="textPassword"
+            android:textColor="#000000"/>
+
+        <!-- Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="Login"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="30dp"
+            app:cornerRadius="12dp"
+            android:backgroundTint="#2E7D32"/>
+
+        <TextView
+            android:id="@+id/txtRegisterRedirect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Register"
+            android:textColor="#2E7D32"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+</ScrollView>
